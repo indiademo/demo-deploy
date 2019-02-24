@@ -58,4 +58,20 @@ rout.post("/login_url",(req,res)=>{
            }
        })
     })
+
+    rout.get('/getDate',(req,res)=>{
+        data=req.body
+       conn.user.find({},(err,result)=>{
+           if(err)
+           {
+               console.log(err)
+           }
+           else{
+            res.send({
+                success:true,
+                result:result
+            }) 
+           }
+       })
+    })
 module.exports=rout;

@@ -1,4 +1,4 @@
-var server='http://localhost:3000' || 'https://demo2-deploy.herokuapp.com'
+var server=''
 export const URL={
     postuser:server + '/login_url',
     get_profile:server + '/profile_url',
